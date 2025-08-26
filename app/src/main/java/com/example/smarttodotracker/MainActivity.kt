@@ -68,6 +68,7 @@ class MainActivity : AppCompatActivity() {
             onDeleteClicked = { task ->
                 taskViewModel.deleteTask(task.id)
                 Toast.makeText(this, "Task '${task.title}' deleted.", Toast.LENGTH_SHORT).show()
+
             }
         )
         binding.tasksRecyclerView.apply {
